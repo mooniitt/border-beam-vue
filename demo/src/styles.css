@@ -766,8 +766,9 @@ body {
 
   .example-cell {
     padding: 32px 20px;
-    min-height: 120px;
+    min-height: 160px;
     border-radius: 20px;
+    overflow: visible;
   }
 
   .mock-chat {
