@@ -1,5 +1,6 @@
-export { BorderBeam } from './BorderBeam';
-export { default } from './BorderBeam';
+export { default as BorderBeam } from './BorderBeam.vue';
+
+export * from './types';
 
 export type {
   BorderBeamProps,

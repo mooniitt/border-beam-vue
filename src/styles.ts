@@ -872,10 +872,12 @@ function generateSmallVariantCSS(options: GenerateStylesOptions): string {
 }
 
 @keyframes beam-spin-${id} {
+  from { --beam-angle-${id}: 0deg; }
   to { --beam-angle-${id}: 360deg; }
 }
 
 @keyframes beam-fade-in-${id} {
+  from { --beam-opacity-${id}: 0; }
   to { --beam-opacity-${id}: 1; }
 }
 
@@ -1121,10 +1123,12 @@ function generateBorderVariantCSS(options: GenerateStylesOptions): string {
 }
 
 @keyframes beam-spin-${id} {
+  from { --beam-angle-${id}: 0deg; }
   to { --beam-angle-${id}: 360deg; }
 }
 
 @keyframes beam-fade-in-${id} {
+  from { --beam-opacity-${id}: 0; }
   to { --beam-opacity-${id}: 1; }
 }
 
@@ -1411,6 +1415,7 @@ function generateLineVariantCSS(options: GenerateStylesOptions): string {
 }
 
 @keyframes beam-fade-in-${id} {
+  from { --beam-opacity-${id}: 0; }
   to { --beam-opacity-${id}: 1; }
 }
 

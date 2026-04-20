@@ -1,7 +1,7 @@
 {
-  "name": "border-beam",
+  "name": "border-beam-vue",
   "version": "1.0.1",
-  "description": "Animated border beam effect for React",
+  "description": "Animated border beam effect for Vue 3",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -23,27 +23,26 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run dev --prefix demo",
     "build": "vite build",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0"
+    "vue": "^3.3.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "@vitejs/plugin-react": "^4.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/tsconfig": "^0.5.0",
     "typescript": "^5.3.0",
     "vite": "^5.0.0",
-    "vite-plugin-dts": "^3.7.0"
+    "vite-plugin-dts": "^3.7.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^2.0.0"
   },
   "keywords": [
-    "react",
+    "vue",
+    "vue3",
     "animation",
     "border",
     "beam",
@@ -55,10 +54,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jakubantalik/border-beam.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/Jakubantalik/border-beam/issues"
+    "url": ""
   },
-  "homepage": "https://beam.jakubantalik.com"
+  "homepage": ""
 }

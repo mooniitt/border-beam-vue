@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode, HTMLAttributes } from 'react';
+import type { CSSProperties } from 'vue';
 
 /**
  * Size/type preset for the border beam effect
@@ -46,10 +46,7 @@ export interface ThemeColors {
 /**
  * Props for the BorderBeam component
  */
-export interface BorderBeamProps extends Omit<HTMLAttributes<HTMLDivElement>, 'children'> {
-  /** Content to wrap with the border beam effect */
-  children: ReactNode;
-
+export interface BorderBeamProps {
   /**
    * Size/type preset
    * - 'sm': Small button-sized with compact glow
@@ -127,22 +124,7 @@ export interface BorderBeamProps extends Omit<HTMLAttributes<HTMLDivElement>, 'c
   strength?: number;
 
   /**
-   * Additional class name for the container
-   */
-  className?: string;
-
-  /**
    * Additional inline styles for the container
    */
   style?: CSSProperties;
-
-  /**
-   * Callback when fade-in animation completes
-   */
-  onActivate?: () => void;
-
-  /**
-   * Callback when fade-out animation completes
-   */
-  onDeactivate?: () => void;
 }
