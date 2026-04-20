@@ -48,8 +48,8 @@ const playgroundStrength = ref(70);
 const durationId = useId();
 const strengthId = useId();
 
-const installCmd = 'npm install border-beam-vue';
-const usageCode = computed(() => `import { BorderBeam } from 'border-beam-vue';\n\n<BorderBeam>\n  <YourCard>Content</YourCard>\n</BorderBeam>`);
+const installCmd = 'npm install border-beam-vue3';
+const usageCode = computed(() => `import { BorderBeam } from 'border-beam-vue3';\n\n<BorderBeam>\n  <YourCard>Content</YourCard>\n</BorderBeam>`);
 const playgroundCode = computed(() => `<BorderBeam size="${playgroundSize.value}" colorVariant="${playgroundColorVariant.value}" :duration="${playgroundDuration.value}"${playgroundStrength.value < 100 ? ` :strength="${playgroundStrength.value / 100}"` : ''}>\n  <Card>Content</Card>\n</BorderBeam>`);
 
 const copiedText = ref<string | null>(null);
@@ -87,7 +87,7 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
   <main id="main-content" class="app">
     <header class="header">
       <nav aria-label="External links" class="top-bar-links">
-        <a class="icon-btn" href="#" aria-label="GitHub repository">
+        <a class="icon-btn" href="https://github.com/mooniitt/border-beam-vue3" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
           <GitHubIcon />
         </a>
       </nav>
