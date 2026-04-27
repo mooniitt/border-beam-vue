@@ -190,7 +190,7 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
 </script>
 
 <template>
-  <a href="#main-content" class="skip-link">Skip to content</a>
+  <a href="#main-content" class="skip-link">跳至内容</a>
 
   <main id="main-content" class="app">
     <header class="header">
@@ -217,7 +217,17 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
       </div>
 
       <h1 class="title">Border beam</h1>
-      <p class="subtitle-sm">Animated border beam component for Vue 3</p>
+      <p class="subtitle-sm">Vue 3 动画边界光束组件</p>
+      <p style="margin-top: 12px; color: var(--text-muted); font-size: 0.9em">
+        如果您觉得有帮助，欢迎在
+        <a
+          href="https://github.com/mooniitt/border-beam-vue"
+          target="_blank"
+          style="color: inherit; text-decoration: underline"
+          >GitHub</a
+        >
+        上点个 Star ⭐️
+      </p>
     </header>
 
     <section class="examples-section" aria-label="Effect demonstrations">
@@ -226,10 +236,10 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
           <div class="mock-chat" role="img" aria-label="Chat input UI example">
             <div class="mock-chat-inner">
               <div class="pill"><AtSignIcon /></div>
-              <div class="placeholder">Build anything...</div>
+              <div class="placeholder">构建任何内容...</div>
               <div class="bottom-row">
-                <div class="tag">Agent <ChevronDownIcon /></div>
-                <div class="tag">Auto <ChevronDownIcon /></div>
+                <div class="tag">智能体 <ChevronDownIcon /></div>
+                <div class="tag">自动 <ChevronDownIcon /></div>
                 <div class="send-btn"><ArrowUpIcon /></div>
               </div>
             </div>
@@ -257,7 +267,7 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
             <div class="mock-search">
               <div class="mock-search-inner">
                 <SearchIcon />
-                <span>Search</span>
+                <span>搜索</span>
               </div>
             </div>
           </BorderBeam>
@@ -266,7 +276,7 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
     </section>
 
     <section class="section" aria-label="Installation">
-      <h2 class="section-title">Installation</h2>
+      <h2 class="section-title">安装</h2>
       <div class="code-block">
         <code>{{ installCmd }}</code>
         <button class="copy-btn" @click="handleCopy(installCmd)">
@@ -277,7 +287,7 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
     </section>
 
     <section class="section" aria-label="Usage">
-      <h2 class="section-title section-title--muted">Usage</h2>
+      <h2 class="section-title section-title--muted">使用说明</h2>
       <div class="code-block code-block--multi">
         <code>{{ usageCode }}</code>
         <button class="copy-btn" @click="handleCopy(usageCode)">
@@ -373,7 +383,7 @@ const setPlaygroundSize = (value: BorderBeamSize) => {
             :class="['card', playgroundSize === 'sm' ? 'card-sm' : 'card-md']"
           >
             <p class="card-text">
-              {{ playgroundSize === "sm" ? "" : "Build anything..." }}
+              {{ playgroundSize === "sm" ? "" : "构建任何内容..." }}
             </p>
           </div>
         </BorderBeam>
